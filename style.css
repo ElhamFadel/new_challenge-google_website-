@@ -1,0 +1,259 @@
+
+/* ======General======*/
+img{
+    width:100%;
+}
+*{
+    border:none;
+    font-family: 'Roboto', sans-serif;
+}
+p.para {
+    color: #4d5156;
+    line-height: 1.59rem;
+}
+h3 {
+    margin: 0;
+    padding-top: .4rem;
+}
+.website a {
+    font-size: 14px!important;
+    color: rgb(0 88 0)!important;
+}
+section{
+    margin-top:1.5rem;
+}
+ul{
+    list-style: none;
+}
+/* ================
+     header
+   ================ */
+.header{
+    padding:1.1rem 2rem;
+}
+
+.header span svg {
+    width: 20%;
+}
+
+.header .search{
+   display:flex ;
+   justify-content: space-between;
+}
+
+.logo{
+    width:18%;
+}
+.b_search {
+    display: flex;
+}
+.header .other {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+input.form-control {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 60px;
+    padding: .8rem 1rem;
+    padding-right: 0px;
+}
+input.form-control:hover,
+input.form-control:focus{
+box-shadow: 2px 2px 7px 1px #c5c5c5;
+}
+.form-inline div {
+    width: 100;
+}
+form.form-inline {
+    margin-left: 2.5rem;
+    position: relative;
+    width: 38rem;
+}
+.icon {
+    display: flex;
+    position: relative;
+    top: -2rem;
+    width: 15%;
+    justify-content: space-around;
+    margin-left: auto;
+    color: #858b8f;
+    font-size: 1.1rem;
+}
+i.fas.fa-times:after {
+    content: " ";
+    border-right: 1px solid #e7e8e8;
+    height: 100%;
+    position: absolute;
+    top: -3px;
+    left: 27px;
+}
+button.btn.primary-btn {
+    background: #4285f4;
+    padding: .7rem 1.5rem;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: .8rem;
+}
+/***********header ul*************/
+ul.navbar-nav {
+    display: flex;
+    list-style: none;
+    width: 56%;
+    margin: 0 10rem;
+}
+a.nav-link {
+    text-decoration: none;
+    color: #5f6368;
+    display: inline-block;
+    vertical-align: 10px;
+}
+/**********ul************/
+hr{
+    height: 1px;
+    background: #f3f2f2;
+}
+/*************************/
+/****Main Style ********/
+main.main a {
+    color: #1a0dab;
+    font-size: 19px;
+    font-weight: 400;
+    text-decoration:none;
+}
+    main.main a:hover {
+    text-decoration: underline;
+}
+
+main.main {
+    display: flex;
+    justify-content: space-around;
+}
+/***** aside-right****************/
+.card {
+    width: 80%;
+    border: 1px solid #ccc;
+    margin-left: 20%;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+.card-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    justify-content: space-between;
+    max-height: 9rem;
+    padding: 0 1.3rem 0 1rem;
+}
+.card h1.title-h1 {
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+.card ul.people_search {
+    list-style: none;
+    display: flex;
+    padding: 0;
+} 
+.card  ul.people_search li{
+    width: 17%;
+    padding: 0 1rem;
+}
+
+.image {
+    width: 45%;
+    display: flex;
+    align-items: center;
+
+}
+.card-body {
+    padding: 0 1rem;
+}
+.card .card-body li {
+        line-height: 2.2rem;
+        color: #67625f;
+}
+.card .card-body li a {
+    color: #000;
+}
+
+i.fas.fa-share-alt {
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #5f6368;
+}
+/**********aside_left************/
+.aside_left{
+    width:45%;
+}
+.aside_left .follow {
+    padding-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aside_left .follow .article {
+    width: 48%;
+}
+/* =========== result2==============*/
+
+.resul-2 ul.info {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.resul-2 .info li {
+    list-style: none;
+    width: 45%;
+    color: #767b7f;
+    line-height: 1.5rem;
+}
+/*************question**********/
+section.ques {
+    border: 1px solid #c1c1c1;
+    border-radius: 5px;
+    
+}
+section.ques h3.head{
+    padding:1rem;
+}
+div.ques {
+    border-top: 1px solid #ccc;
+}
+div.ques>div{
+    padding:1rem;
+}
+/***********Section Related************/
+.related ul.relate {
+    display: flex;
+    flex-wrap: wrap;
+    padding:0;
+
+}
+.related i.fas.fa-search {
+    padding-right: 15px;
+}
+.related .relate li {
+    width: 35%;
+    padding: 1rem;
+    background: aliceblue;
+    margin: 5px;
+    border-radius: 25px;
+}
+/*==========Google=========*/
+.google ul {
+    display: flex;
+    justify-content: center;
+    
+}
+.google ul  span{
+        display: block;
+        color: #FFC107;
+        font-size: 2rem;
+  
+}
+.google li {
+    font-weight: 700;
+    font-size: 2rem;
+}
