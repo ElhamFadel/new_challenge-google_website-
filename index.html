@@ -183,8 +183,8 @@
          <section class="ques">
             <h3 class="head">People also ask</h3>
             <div class="ques">
-                <div class="ques-1">
-                    <h4>What is react used for?</h4>
+                <div class="ques-1" onclick="down(this)">
+                    <h4>What is react used for? <i class="fas fa-caret-down"></i></h4>
                     <p class="para">
                      React. js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It's used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components
                     </p>
@@ -193,8 +193,8 @@
                     </div><!-- /ques-1 -->
             </div>
             <div class="ques">
-                <div class="ques-2">
-                    <h4>What is react in programming?</h4>
+                <div class="ques-2" onclick="down(this)">
+                    <h4>What is react in programming? <i class="fas fa-caret-down"></i></h4>
                     <p class="para">
                      
                         React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”. React has a few different kinds of components, but we'll start with React.Component subclasses: class ShoppingList extends React                </p>
@@ -203,8 +203,8 @@
                   </div><!-- /ques-2 -->
             </div>
             <div class="ques">
-                <div class="ques-3">
-                    <h4>Is react JS frontend or backend?</h4>
+                <div class="ques-3" onclick="down(this)">
+                    <h4>Is react JS frontend or backend? <i class="fas fa-caret-down"></i></h4>
                     <p class="para">
                      
                         Is React a Frontend or Backend library? Created and maintained by Facebook, React is a front-end library that runs on a browser. Like most libraries, this one runs on web servers like Apache or with backends like PHP or Rails         
@@ -213,8 +213,8 @@
                   </div><!-- /ques-3 -->
             </div>
            <div class="ques">
-               <div class="ques-4">
-                <h4>Why react JS is better?</h4>
+               <div class="ques-4" onclick="down(this)">
+                <h4>Why react JS is better? <i class="fas fa-caret-down"></i></h4>
                 <p class="para">
                     Businesses that use ReactJS are assured of better performance compared to those that use other frameworks. Because ReactJS helps to prevent updating of DOM, it means that the apps will be faster and deliver better UX. ReactJS was designed to help improve the total rendered pages from the website server
                  
@@ -227,6 +227,35 @@
 
         </section> <!-- /ques -->
          <!-- ============ /.box-question ========== -->
+         <!-- ============ Videos ========== -->
+         <section class="video-wrap">
+            <h3>Videos</h3>
+        
+         <div class="videos">
+             
+             <div class="video">
+                <iframe  src="https://www.youtube.com/embed/DLX62G4lc44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+             <div class="video">
+                <iframe  src="https://www.youtube.com/embed/JPT3bFIwJYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+             <div class="video">
+                <iframe  src="https://www.youtube.com/embed/MRIMT0xPXFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             </div>
+                <div class="video">
+                    <iframe  src="https://www.youtube.com/embed/DLX62G4lc44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
+                 <div class="video">
+                    <iframe  src="https://www.youtube.com/embed/JPT3bFIwJYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
+                 <div class="video">
+                    <iframe  src="https://www.youtube.com/embed/MRIMT0xPXFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                           </div>
+                           <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+         </section>
+         <!-- ============ /.Videos ========== -->
+
          <section class="resul-4">
             <div class="website"><a href="#">React Tutorial - W3Schoolswww.w3schools.com ›  <i class="fas fa-caret-down"></i></a></div>
             <h3 class="link-1">
@@ -352,6 +381,17 @@
                 </div>  <!-- /.card -->
                 <a href="#" class="second-link">Comments</a>
             </div> <!-- /.box_react -->
+            <div class="box_reactNa">
+                <div class="card">
+                 <div class="info"> <h4>Show result  about</h4>
+                    <div><a href="#">React Nativ</a></div>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                    <div class="image">
+                        <img src="./img/react.png" alt="">
+                    </div>
+                </div> <!-- /.card -->
+
+            </div><!-- /.box_reactNa -->
         </aside> <!-- /aside_left-->
 
 
@@ -374,6 +414,7 @@
      </ul>
     </footer>  
       <!-- ============ /footer ========== -->
+      <script src="./main.js"></script>
     
 </body>
 </html>

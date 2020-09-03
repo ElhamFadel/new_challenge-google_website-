@@ -1,11 +1,17 @@
 
 /* ======General======*/
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
 img{
     width:100%;
 }
 *{
     border:none;
-    font-family: 'Roboto', sans-serif;
+    
+
 }
 p.para {
     color: #4d5156;
@@ -184,6 +190,18 @@ i.fas.fa-share-alt {
     font-size: 1.5rem;
     color: #5f6368;
 }
+.box_reactNa .card{
+    display: flex;
+    align-items: center;
+    width:80%;
+    justify-content: space-between;
+    padding: 0 1.3rem 0 1rem;
+
+}
+.box_reactNa {
+    width: 95%;
+}
+
 /**********aside_left************/
 .aside_left{
     width:45%;
@@ -215,6 +233,10 @@ section.ques {
     border-radius: 5px;
     
 }
+section.ques>div>div{
+    height: 3rem;
+    overflow: hidden;
+}
 section.ques h3.head{
     padding:1rem;
 }
@@ -222,7 +244,7 @@ div.ques {
     border-top: 1px solid #ccc;
 }
 div.ques>div{
-    padding:1rem;
+    padding:.5rem 1rem;
 }
 /***********Section Related************/
 .related ul.relate {
@@ -256,4 +278,37 @@ div.ques>div{
 .google li {
     font-weight: 700;
     font-size: 2rem;
+}
+/********Videos*****************/
+.videos{
+    display: flex;
+    position: relative;
+}
+.videos .video{
+    width:10rem;
+    height: 10rem;
+}
+
+button.w3-button.w3-black {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    z-index: 9999;
+}
+button.w3-button.w3-black.w3-display-left {
+    position: absolute;
+    top: 35%;
+    left: -4%;
+}
+button.w3-button.w3-black.w3-display-right {
+    position: absolute;
+    top: 35%;
+    right: -14%;
+}
+.box_react a.second-link {
+    color: #626362;
+    font-size: 14px;
+    display: block;
+    text-align: end;
 }
