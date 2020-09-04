@@ -1,0 +1,104 @@
+@media screen and (max-width: 768px) {
+    form.form-inline {
+        width: 20rem;
+    }
+    ul.navbar-nav {
+        width: 85%;
+         margin: 0 ; 
+    }
+    .card {
+        width: 100%;
+        margin:0;
+    }
+}
+@media screen and (max-width: 460px) {
+  
+        body {
+            font-size: 10px!important;
+        }
+        form.form-inline {
+            margin-left:0rem; 
+        }
+        input.form-control {
+            padding: .2rem 1rem;
+            width:65%;
+            
+        }
+        .icon {
+            top: -1rem;
+            font-size: .5rem;
+            margin-left: 58%;
+            width: 12%;
+        }
+        ul.navbar-nav {
+        
+            width: 95%;
+           margin: 0 ;
+        }
+        main.main {
+            justify-content: center;
+        }
+        p.para {
+            line-height: 1rem;
+        }
+        .aside_left .follow {
+            padding-left: 1rem;
+        }
+        .aside_left .follow .article {
+            width: 100%;
+        }
+        .card h1.title-h1 {
+            font-size: initial;
+        }
+        .aside_left {
+            width: 45%;
+        }
+        main.main a {
+            font-size: small;
+        }
+        .website a {
+            font-size: 10px!important;
+        }
+        ul.info {
+            padding: 0;
+        }
+        .card .card-body li {
+            line-height: 1.5;
+            
+        }
+        .card ul.people_search {
+            list-style: none;
+            display: flex;
+            padding: 0;
+        }
+        .card ul.people_search li {
+            width: 8%;
+            padding: 0 1.5rem 0 0;
+        }
+        .card .card-body li a {
+        
+            font-size: 10px;
+        }
+        .box_reactNa .card{
+            width:85%;
+        }
+        iframe {
+            width: 5rem;
+            height: 5rem;
+        }
+        .related .relate li {
+            width:55%;
+        }
+        section.google {
+            width: 150%;
+        }
+        button.btn.primary-btn{
+        
+    padding: .4rem 1rem;
+     margin-left: 0rem;
+        }
+        form.form-inline {
+            width:18rem;
+        }
+
+}
