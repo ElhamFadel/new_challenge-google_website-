@@ -4,82 +4,488 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="all.min.css"><!-- fontawesom -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./style.css"><!-- my style -->
+    <link rel="stylesheet" href="./responsive.css">
     <title>Google</title>
 </head>
 <body>
     <!-- ============ Header ========== -->
     <header class="header">
       <div class="search">
-          <div class="logo">
-              <img src="./img/googlelogo_color_92x30dp.png" alt="logo">
-          </div><!-- /.logo -->
           <div class="b_search">
-            <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
-               
-                <input class="form-control form-control-sm ml-3 w-75" type="text"
+            <div class="logo">
+                <img src="./img/googlelogo_color_92x30dp.png" alt="logo">
+            </div><!-- /.logo -->
+            <form class="form-inline ">
+            <div>
+                <input class="form-control " type="text"
                   aria-label="Search" value ="react">
+            </div>
                   <div class="icon">
                     <i class="fas fa-times"></i><!-- X -->
-                    <svg class="HPVvwb" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z" fill="#4285f4"></path><path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path><path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z" fill="#f4b400"></path><path d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z" fill="#ea4335"></path></svg>
-                    <i class="fas fa-search" aria-hidden="true"></i>
+                   
+                        <svg class="HPVvwb" style="width:1.5rem;" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z" fill="#4285f4"></path><path d="m11 18.08h2v3.92h-2z" fill="#34a853"></path><path d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z" fill="#f4b400"></path><path d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z" fill="#ea4335"></path></svg>
+
+                    
+                    <i class="fas fa-search" aria-hidden="true" style="color: #4285f4;
+                    "></i>
                   </div><!-- /.icon -->
-                </form>
+                </form><!-- /form -->
+
+          </div><!-- b_search -->
                 <div class="other">
                     <i class='fab fa-buromobelexperte' style='font-size:20px'></i>
                     <button class="btn primary-btn">Sign in</button>
-                </div>
-          </div><!-- /.block_search -->
-
-
+                </div> <!-- /.other -->
       </div><!-- /.search -->
-      <div class="navbar">
+      
         <nav class="navbar ">
             <div class=" navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                <span><svg focusable="false" viewBox="0 0 24 24"><path fill="#34a853" d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8"></path><path fill="#ea4335" d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6"></path><path fill="#fbbc04" d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"></path><path fill="#4285f4" d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59"></path></svg></span>
-                  <a class="nav-link" href="#">All </a>
+                  <a class="nav-link" href="#">
+                    <span><svg focusable="false" viewBox="0 0 24 24"><path fill="#34a853" d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8"></path><path fill="#ea4335" d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6"></path><path fill="#fbbc04" d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"></path><path fill="#4285f4" d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59"></path></svg></span>
+
+                      All </a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="#">
                     <span><svg focusable="false" viewBox="0 0 24 24"><path d="M14 13l4 5H6l4-4 1.79 1.78L14 13zm-6.01-2.99A2 2 0 0 0 8 6a2 2 0 0 0-.01 4.01zM22 5v14a3 3 0 0 1-3 2.99H5c-1.64 0-3-1.36-3-3V5c0-1.64 1.36-3 3-3h14c1.65 0 3 1.36 3 3zm-2.01 0a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h7v-.01h7a1 1 0 0 0 1-1V5"></path></svg></span>
-                  <a class="nav-link" href="#">Photo</a>
+
+                      Photo</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <span><svg focusable="false" viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"></path></svg></span>
                   <a class="nav-link " href="#" >
+                    <span><svg focusable="false" viewBox="0 0 24 24"><path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"></path></svg></span>
                     Video
                   </a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link " href="#" >
                     <span><svg focusable="false" viewBox="0 0 24 24"><path d="M18 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 18H6V4h2v8l2.5-1.5L13 12V4h5v16"></path></svg></span>
-                  <a class="nav-link " >Books</a>
+
+                      Books</a>
                 </li>
                 <li class="nav-item">
-                    <span><svg focusable="false" viewBox="0 0 24 24"><path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"></path></svg></span>
-                    <a class="nav-link " >News</a>
+                    <a class="nav-link "  href="#">
+                        <span><svg focusable="false" viewBox="0 0 24 24"><path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"></path></svg></span>
+
+                        News</a>
                   </li>
                   <li class="nav-item">
-                      <span><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></span>
-                    <a class="nav-link " >More</a>
+                    <a class="nav-link " href="#" >
+                        <span><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg></span>
+
+                        More</a>
                   </li>
-                  <div class="flex-right">
+                  <span class="auto-item"></span>
                     <li class="nav-item">
-                        <a class="nav-link " >Settings</a>
+                        <a class="nav-link " href="#" >
+
+                            Settings</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link " >Tools</a>
+                        <a class="nav-link " href="#" >
+
+                            Tools</a>
                       </li>
-                  </div><!-- /.flex-right -->
+                 
+                  
+                  
               </ul>
             </div>
           </nav>
-      </div><!-- /.navbar -->
-    </header>
+      <!-- /.navbar -->
+    </header> 
+    <hr >
     <!-- ============ /Header ========== -->
     <!-- ============ main ========== -->
+    <main class="main">
+        <div class="aside_left">
+            <section class="more-important">
+                <div class="results-1">
+                    <div class="website"><a href="#">en.reactjs.org <i class="fas fa-caret-down"></i></a></div>
+                    <h3 class="link-1">
+                        <a href="#">React - JavaScript library for building user interfaces
+                        </a>
+                    </h3>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis officiis et porro laborum sequi tempora?....</p>
+                    <div class="follow">
+                        <div class="article">
+                            <h3><a href="#">Getting Started</a></h3>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                        </div> <!-- /.article -->
+                        <div class="article">
+                            <h3><a href="#">Hooks</a></h3>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                        </div> <!-- /.article -->
+                        <div class="article">
+                            <h3><a href="#">Tutorial</a></h3>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                        </div> <!-- /.article -->
+                        <div class="article">
+                            <h3><a href="#">Create a New React App</a></h3>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                        </div> <!-- /.article -->
+                        <div class="article">
+                            <h3><a href="#">Hello World</a></h3>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                            <div class="website">
+                            <a href="#">More result org <i class="fas fa-angle-double-right"></i>
+                            </div>
+                        </div> <!-- /.article -->
+                        <div class="article">
+                            <h3><a href="#">
+                                Components and Props</a></h3>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            </p>
+                        </div> <!-- /.article -->
+                        
+    
+                    </div><!-- /.follow -->
+                   
+                </div> <!-- /.part-1 -->
+            </section><!-- /.more-important -->
+            <!-- ====================  /.more-important  =================== -->
+            <section class="resul-2">
+                <div class="website"><a href="#">en.wikipedia.org › wiki › React_(web_... <i class="fas fa-caret-down"></i></a></div>
+                <h3 class="link-1">
+                    <a href="#">React (web framework) - Wikipedia
+                    </a>
+                </h3>
+                        <p class="para">
+                            reactjs.org. <b>React</b> (also known as <b>React</b>. js or ReactJS) is an open-source JavaScript library for building user interfaces or UI components. It is maintained by Facebook and a community of individual developers and companies. <b>React</b> can be used as a base in the development of single-page or mobile applications.
+    
+                        </p>
+                        <ul class="info">
+                            <li> <b>Stable release‏</b>:‏16.13.1 / March 19, 2020; 4 mo...
+                                ‏   </li>
+                                <li> <b>Developer(s)‏</b>: Facebook and community....
+                                    ‏   </li>
+                                    <li> <b>Initial release‏</b>: May 29, 2013; 7 years ago...
+                                        ‏   </li>
+                                        <li> <b>Original author(s)‏</b>: Jordan Walke ...
+                                            ‏   </li>
+    
+                        </ul>
+            </section>
+            <!-- ====================  /.resul-2 =================== -->
+            <section class="result-3">
+                <div class="results-1">
+                    <div class="website"><a href="#">
+                      GitHubgithub.com › facebook › react
+                      <i class="fas fa-caret-down"></i></a></div>
+                    <h3 class="link-1">
+                        <a href="#">facebook/react: A declarative, efficient, and flexible ... - GitHub
+                        </a>
+                    </h3>
+                    <p class="para"> <b>React</b> is a JavaScript library for building user interfaces. Declarative: <b>React</b> makes it painless to create interactive UIs. Design simple views for each state in your ...</p>
+                   
+                   
+                </div> <!-- /.part-1 -->
+            </section>
+            <!-- ====================  /.resul-3 =================== -->
+             <!-- ============ box-question ========== -->
+         <section class="ques">
+            <h3 class="head">People also ask</h3>
+            <div class="ques">
+                <div class="ques-1" onclick="down(this)">
+                    <h4>What is react used for? <i class="fas fa-caret-down"></i></h4>
+                    <p class="para">
+                     React. js is an open-source JavaScript library that is used for building user interfaces specifically for single-page applications. It's used for handling the view layer for web and mobile apps. React also allows us to create reusable UI components
+                    </p>
+                    <h3>
+                    <a href="#">What and Why React.js - C# Corner</a></h3>
+                    </div><!-- /ques-1 -->
+            </div>
+            <div class="ques">
+                <div class="ques-2" onclick="down(this)">
+                    <h4>What is react in programming? <i class="fas fa-caret-down"></i></h4>
+                    <p class="para">
+                     
+                        React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”. React has a few different kinds of components, but we'll start with React.Component subclasses: class ShoppingList extends React                </p>
+                    <h3>
+                    <a href="#">Tutorial: Intro to React – React</a></h3>
+                  </div><!-- /ques-2 -->
+            </div>
+            <div class="ques">
+                <div class="ques-3" onclick="down(this)">
+                    <h4>Is react JS frontend or backend? <i class="fas fa-caret-down"></i></h4>
+                    <p class="para">
+                     
+                        Is React a Frontend or Backend library? Created and maintained by Facebook, React is a front-end library that runs on a browser. Like most libraries, this one runs on web servers like Apache or with backends like PHP or Rails         
+                               <h3>
+                    <a href="#">5 Reasons to use Nodejs with React for Web Development ...</a></h3>
+                  </div><!-- /ques-3 -->
+            </div>
+           <div class="ques">
+               <div class="ques-4" onclick="down(this)">
+                <h4>Why react JS is better? <i class="fas fa-caret-down"></i></h4>
+                <p class="para">
+                    Businesses that use ReactJS are assured of better performance compared to those that use other frameworks. Because ReactJS helps to prevent updating of DOM, it means that the apps will be faster and deliver better UX. ReactJS was designed to help improve the total rendered pages from the website server
+                 
+ </p>
+ <h3>
+    <a href="#">Why ReactJS is gaining so much popularity these days | by ...</a></h3>
+ 
+              </div><!-- /ques-4 -->
+           </div>
+
+        </section> <!-- /ques -->
+         <!-- ============ /.box-question ========== -->
+         <!-- ============ Videos ========== -->
+         <section class="video-wrap">
+            <h3>Videos</h3>
+        
+         <div class="videos">
+             
+             <div class="video-container">
+                <div class="video">
+                    <iframe  src="https://www.youtube.com/embed/DLX62G4lc44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
+                 <div class="body-video">
+                    <h4><a href="#">ReactJS Basics-#1 What is React ?</a></h4>
+                    <h5>Academind</h5>
+                    <h6>YouTube - 11‏/08‏/2016
+                   </h6>
+                </div>
+             </div> <!-- /.video-container -->
+            <div class="video-container">
+                <div class="video">
+                    <iframe  src="https://www.youtube.com/embed/JPT3bFIwJYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
+                 <div class="body-video">
+                    <h4><a href="#">ReactJS Basics-#1 What is React ?</a></h4>
+                    <h5>Academind</h5>
+                    <h6>YouTube - 11‏/08‏/2016
+                   </h6>
+                </div>
+            </div><!-- /.video-container -->
+            <div class="video-container">
+                <div class="video">
+                   
+                    <iframe  src="https://www.youtube.com/embed/MRIMT0xPXFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             </div>
+                    <div class="body-video">
+                        <h4><a href="#">ReactJS Basics-#1 What is React ?</a></h4>
+                        <h5>Academind</h5>
+                        <h6>YouTube - 11‏/08‏/2016
+                       </h6>
+                    </div>
+                </div>
+                
+            <div class="video-container">
+                <div class="video">
+                    <iframe  src="https://www.youtube.com/embed/DLX62G4lc44" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 </div>
+
+                 <div class="body-video">
+                     <h4><a href="#">ReactJS Basics-#1 What is React ?</a></h4>
+                     <h5>Academind</h5>
+                     <h6>YouTube - 11‏/08‏/2016
+                    </h6>
+                 
+                </div>
+
+             </div> <!-- /.video-container -->
+            <div class="video-container">
+                <div class="video">
+                    
+                    <iframe  src="https://www.youtube.com/embed/JPT3bFIwJYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                 </div>
+<div class="body-video">
+                     <h4><a href="#">ReactJS Basics-#1 What is React ?</a></h4>
+                     <h5>Academind</h5>
+                     <h6>YouTube - 11‏/08‏/2016
+                    </h6>
+                 </div>
+            </div><!-- /.video-container -->
+            <div class="video-container">
+                <div class="video">
+                    <iframe  src="https://www.youtube.com/embed/MRIMT0xPXFI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             </div>
+                    <div class="body-video">
+                        <h4><a href="#">ReactJS Basics-#1 What is React ?</a></h4>
+                        <h5>Academind</h5>
+                        <h6>YouTube - 11‏/08‏/2016
+                       </h6>
+                    </div>
+            </div>
+                           <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+                        </div>
+         </section>
+         <!-- ============ /.Videos ========== -->
+
+         <section class="resul-4">
+            <div class="website"><a href="#">React Tutorial - W3Schoolswww.w3schools.com ›  <i class="fas fa-caret-down"></i></a></div>
+            <h3 class="link-1">
+                <a href="#">React Tutorial - W3Schools
+                </a>
+            </h3>
+                    <p class="para">
+                        React is a JavaScript library for building user interfaces. React is used to build single page applications. React allows us to create reusable UI components.
+
+                    </p>
+        </section>
+        <!-- ====================  /.resul-4 =================== -->
+        <section class="resul-5">
+            <div class="website"><a href="#">React Tutorial - W3Schoolswww.w3schools.com ›  <i class="fas fa-caret-down"></i></a></div>
+            <h3 class="link-1">
+                <a href="#">What is React - W3Schools
+                </a>
+            </h3>
+                    <p class="para">
+                        If an attribute is wrapped in curly braces, the value is a JavaScript expression. Note that JSX does not use quotes around the HTML text string. React DOM Render
+                    </p>
+        </section>
+        <!-- ====================  /.resul-5 =================== -->
+        <section class="resul-6">
+            <div class="website"><a href="#">reactnative.dev...  <i class="fas fa-caret-down"></i></a></div>
+            <h3 class="link-1">
+                <a href="#">React Native · A framework for building native apps using ...
+                </a>
+            </h3>
+            
+ 
+                    <p class="para">
+                        A framework for building native apps using React.
+                     </p>
+        </section>
+        <!-- ====================  /.resul-6 =================== -->
+        <section class="related">
+            <h3>Related Searches</h3>
+            <ul class="relate">
+                <li><i class="fas fa-search" aria-hidden="true" 
+                    ></i>create-react-app </li>
+                    <li><i class="fas fa-search" aria-hidden="true" 
+                        ></i>React Native </li>
+                        <li><i class="fas fa-search" aria-hidden="true" 
+                            ></i>React Js Example </li>
+                            <li><i class="fas fa-search" aria-hidden="true" 
+                                ></i>React Tutorial </li>
+                                <li><i class="fas fa-search" aria-hidden="true" 
+                                    ></i>React Books </li>
+                                    <li><i class="fas fa-search" aria-hidden="true" 
+                                        ></i>React bootstrap </li>
+                                        <li><i class="fas fa-search" aria-hidden="true" 
+                                            ></i>React Vs angular </li>
+            </ul>
+        </section>
+        <section class="google">
+          <ul>
+              <li style="color:blue">G</li>
+              <li><a href="#"> <span  style="color:red">O</span>1</a></li>
+              <li><a href="#"> <span>O</span>2</a></li>
+              <li><a href="#"> <span>O</span>3</a></li>
+              <li><a href="#"> <span>O</span>4</a></li>
+              <li><a href="#"> <span>O</span>5</a></li>
+              <li><a href="#"> <span>O</span>6</a></li>
+              <li><a href="#"> <span>O</span>7</a></li>
+
+              <li><a href="#"> <span>O</span>8</a></li>
+              <li><a href="#"> <span>O</span>9</a></li>
+              <li><a href="#"> <span>O</span>10</a></li>
+              <li style="color:blue">g</li>
+              <li style="color:green">l</li>
+              <li style="color:red">e</li>
+              <li ><a href="#"><i class="fas fa-angle-double-right"></i></a><span style="
+                font-size: 14px;
+            ">Next</span></li>
+
+          </ul>
+        </section><!-- /.google -->
+       
+        </div> <!-- /.aside_left -->
+        <aside class="aside_left">
+            <div class="box_react">
+                <div class="card">
+                   <div class="card-header">
+                       <h1 class="title-h1">
+                           React
+                       </h1> <!-- /.title-h1 -->
+                       <div class="image">
+                        <i class="fas fa-share-alt"></i>
+                        <img src="img/react.png" alt="react image">
+                       </div> <!-- /.image -->
+                   </div> <!-- /.card header -->
+                   <div class="card-body">
+                        <p class="para">
+                            the JavaScript language specialized for user interfaces built by Facebook, as it provides a smooth and powerful method for building website interfaces, as it allows developers to build a component of web pages once so that it can be reused many times. <a href="#"> Wikipedia</a>
+                        </p>
+                        <ul class="info">
+                              <li><a href="#"> <b>Original author </b></a>: Walke Jordan</li>
+                             
+                              <li><a href="#"> <b>Initial release  </b></a> : 7 years ago; May 29, 2013</li>
+                              <li><a href="#"> <b>License :</b></a><a href="#" style="color:#1a0dab;"> Walke Jordan</a></li>
+                              <li><a href="#"> <b>Stable Release 
+                            </b></a>: 4 months ago; March 19, 2020 / 16.13.1</li>
+                            <li><a href="#"> <b>Developers  </b></a>: community and <a href="#" style="color:#1a0dab;">Facebook</a></li>
+                             
+                            <li><a href="#"> <b>Written in </b></a>: <a href="#" style="color:#1a0dab;">JavaScript</a> </li>
+                        </ul> <!-- /.info -->
+                        <div class="p-searching">
+                              <a href="#" class="b-link">People are also searching for
+                            </a>
+                            <a href="#" class="second-link">
+                                Offer +15 more
+                            </a>
+                            <ul class="people_search">
+                                <li><img src="./img/angular.png" alt=""><a href="#">Angular</a></li>
+                                <li><img src="./img/view.png" alt=""><a href="#">View GS</a></li>
+                                <li><img src="./img/react_n.png" alt=""><a href="#">React Native</a></li>
+                                <li><img src="./img/na.png" alt=""><a href="#">Node.js</a></li>
+                            </ul>
+                        </div> <!-- /.p-searching -->
+                   </div> <!-- /.card-body -->
+          
+                </div>  <!-- /.card -->
+                <a href="#" class="second-link">Comments</a>
+            </div> <!-- /.box_react -->
+            <div class="box_reactNa">
+                <div class="card">
+                 <div class="info"> <h4>Show result  about</h4>
+                    <div><a href="#">React Nativ</a></div>
+                    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></div>
+                    <div class="image">
+                        <img src="./img/react.png" alt="">
+                    </div>
+                </div> <!-- /.card -->
+
+            </div><!-- /.box_reactNa -->
+        </aside> <!-- /aside_left-->
+
+
+        
+
+
+    </main>
     <!-- ============ /main ========== -->
     <!-- ============ footer ========== -->
-    <!-- ============ /footer ========== -->
+    <footer class="footer">
+     <p class="para loca">
+        Palestine <span></span> <b>The Gaza Strip</b>  - <a href="#">from the internet address </a>- </a>Use the exact location </a>- More information
+     </p>
+     <hr>
+     <ul class="footer_ul">
+         <li><a href="#">Terms</a></li>
+         <li><a href="#">Privacy Policy </a></li>
+         <li><a href="#">Sending commits</a></li>
+         <li><a href="#">Helps</a></li>
+     </ul>
+    </footer>  
+      <!-- ============ /footer ========== -->
+      <script src="./main.js"></script>
     
 </body>
 </html>
